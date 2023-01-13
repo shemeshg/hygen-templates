@@ -6,15 +6,5 @@ module.exports = [
     type: 'input',
     name: 'libName',
     message: "Library name:"
-  },
-  {
-    type: 'input',
-    name: 'paramType',
-    message: "Parameter type:"
-  },
-  {
-    type: 'input',
-    name: 'paramName',
-    message: "Parameter name:"
-  },
+  }
 ]
