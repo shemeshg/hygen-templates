@@ -1,6 +1,6 @@
 ---
 to: <%= h.changeCase.pascalCase(libName)  %>/CMakeLists.txt
-sh: mkdir ./<%= h.changeCase.pascalCase(libName)  %>/img/;cp -r _templates/qml-lib-new/with-prompt/img/ ./<%= h.changeCase.pascalCase(libName)  %>/img/
+sh: mkdir ./<%= h.changeCase.pascalCase(libName)  %>/img/;cp -r <%= templates %>/qml-lib-new/with-prompt/img/ ./<%= h.changeCase.pascalCase(libName)  %>/img/
 ---
 
 qt6_add_qml_module(<%= h.changeCase.pascalCase(libName)  %>
