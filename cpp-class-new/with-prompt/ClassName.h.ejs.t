@@ -4,17 +4,17 @@ to: <%= h.changeCase.pascalCase(className)  %>.h
 
 #pragma once
 
-class ClassName
+class <%= h.changeCase.pascalCase(className)  %>
 {
 public:
-  ClassName() = default;
+  <%= h.changeCase.pascalCase(className)  %>() = default;
 
-  ClassName(ClassName const &) = delete;
-  ClassName &operator=(ClassName const &) = delete;
-  ClassName(ClassName &&) = delete;
-  ClassName &operator=(ClassName &&) = delete;
+  <%= h.changeCase.pascalCase(className)  %>(<%= h.changeCase.pascalCase(className)  %> const &) = delete;
+  <%= h.changeCase.pascalCase(className)  %> &operator=(<%= h.changeCase.pascalCase(className)  %> const &) = delete;
+  <%= h.changeCase.pascalCase(className)  %>(<%= h.changeCase.pascalCase(className)  %> &&) = delete;
+  <%= h.changeCase.pascalCase(className)  %> &operator=(<%= h.changeCase.pascalCase(className)  %> &&) = delete;
 
-  ~ClassName();
+  ~<%= h.changeCase.pascalCase(className)  %>();
 
   // hygen public
   private:
