@@ -17,3 +17,4 @@ before: // hygen public
 
     m_<%= h.changeCase.camelCase(paramName)  %> = <%= h.changeCase.camelCase(paramName)  %>;
   }
+  
