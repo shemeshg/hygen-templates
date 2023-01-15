@@ -8,10 +8,14 @@ set(<%= h.changeCase.pascalCase(prjName)  %>_SRCS
     # hygen srcs
 )
 
+# hygen add_subdirectory
+
 # Declare the library
 add_library(<%= h.changeCase.pascalCase(prjName)  %> STATIC
     ${<%= h.changeCase.pascalCase(prjName)  %>_SRCS}
 )
+
+# hygen target_link_libraries
 
 # Specify here the include directories exported
 # by this library
