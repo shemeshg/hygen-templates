@@ -13,6 +13,8 @@ set(appBinary app<%= h.changeCase.pascalCase(prjName)  %>)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
+# hygen add_subdirectory
+
 qt_add_executable(${appBinary}
     main.cpp
 )
@@ -27,12 +29,14 @@ set_target_properties(${appBinary} PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-    MACOSX_BUNDLE FALSE
+    MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
 
 target_link_libraries(${appBinary}
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick
+    # hygen target_link_libraries
+    )
 
 install(TARGETS ${appBinary}
     BUNDLE DESTINATION .

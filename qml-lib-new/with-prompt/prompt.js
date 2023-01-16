@@ -6,5 +6,11 @@ module.exports = [
     type: 'input',
     name: 'libName',
     message: "Library name:"
-  }
+  },
+  {
+    type: 'input',
+    name: 'cmakePath',
+    initial: ".",
+    message: "CMakeLists.txt to link path:"
+  } 
 ]

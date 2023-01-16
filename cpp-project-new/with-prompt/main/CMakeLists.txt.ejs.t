@@ -16,7 +16,9 @@ add_executable(${binName}
 )
 
 # Specify here the libraries this program depends on
-target_link_libraries(${binName} <%= h.changeCase.pascalCase(prjName)  %> )
-# hygen target_link_libraries
+target_link_libraries(${binName} <%= h.changeCase.pascalCase(prjName)  %> 
+    # hygen target_link_libraries
+)
+
 
 install(TARGETS ${binName} DESTINATION bin)

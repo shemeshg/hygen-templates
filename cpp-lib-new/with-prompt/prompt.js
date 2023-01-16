@@ -12,11 +12,5 @@ module.exports = [
     name: 'cmakePath',
     initial: ".",
     message: "CMakeLists.txt to link path:"
-  },    
-  {
-    type: 'input',
-    name: 'binName',
-    initial: ".",
-    message: "CMakeLists.txt to link binary identifier:"
-  },    
+  } 
 ]
