@@ -4,8 +4,8 @@
 module.exports = [
   {
     type: 'input',
-    name: 'libName',
-    message: "Library name:"
+    name: 'hPath',
+    message: "Header file path:"
   },
   {
     type: 'input',

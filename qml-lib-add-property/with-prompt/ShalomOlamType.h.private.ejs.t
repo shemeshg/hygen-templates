@@ -1,6 +1,6 @@
 ---
 inject: true
-to: <%= h.changeCase.pascalCase(libName)  %>/<%= h.changeCase.pascalCase(libName)  %>Type.h
+to: <%= hPath  %>
 before: // hygen private
 ---
 
