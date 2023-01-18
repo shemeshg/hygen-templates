@@ -11,6 +11,6 @@ module.exports = [
     type: 'input',
     name: 'cmakePath',
     initial: ".",
-    message: "CMakeLists.txt path:"
+    message: "CMakeLists.txt folder path:"
   },
 ]
