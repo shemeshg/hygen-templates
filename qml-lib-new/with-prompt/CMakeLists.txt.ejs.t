@@ -9,7 +9,7 @@ qt6_add_qml_module(<%= h.changeCase.pascalCase(libName)  %>
         SOURCES
             <%= h.changeCase.pascalCase(libName)  %>Type.h 
             <%= h.changeCase.pascalCase(libName)  %>Type.cpp
+            qrc.qrc
         QML_FILES
             <%= h.changeCase.pascalCase(libName)  %>Component.qml
-        RESOURCES
-            img/cat.jpeg    )
+        )
